@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"/>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <title>Weather App</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+        <a href="#" class="logo">
+          <img src="assets/image/logo.png" alt="Weather Logo" />
+          <div class="logo-text">
+            Weather
+            <span>tagline goes here</span>
+          </div>
+        </a>
+  
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item active">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">News</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Live cameras</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    <header class="hero">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-8 margin mx-auto text-center">
+                    <div class="input-group input-group-lg mt-4">
+                        <input type="search" class="form-control" placeholder="Find your location..." id="cityInput">
+                        <button class="btn btn-primary" type="button" onclick="getWeather()">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="py-5 ">
+        <div class="container weather-cards-container"> 
+            <div class="row" id="weather-forecast">
+                
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+              <div class="subscribe">
+                <input type="email" placeholder="Enter your email to subscribe...">
+                <button>Subscribe</button> 
+              </div>
+                <div class="social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                </div>
+            </div>
+            <p class="copyright">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>

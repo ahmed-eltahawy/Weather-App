@@ -1,0 +1,273 @@
+/* General Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  background-color: #00020e;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+  padding: 20px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logo img {
+  width: 60px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo-text span {
+  font-size: 14px;
+  color: #888;
+}
+
+.nav-item {
+  margin-left: 40px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+  color: #0093ff;
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../image/banner.png') center/cover no-repeat;
+  min-height: 50vh;
+  display: grid;
+  grid-template-rows: 1fr auto;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 0;
+}
+
+.margin {
+  margin-top: 50px;
+}
+
+.hero .input-group {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Weather Cards */
+.weather-cards-container {
+  grid-row: 2;
+  padding: 30px 0;
+}
+
+.weather-card {
+  background-color: #212529;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.weather-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.weather-card h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.weather-card .temp {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card img {
+  width: 80px;
+  height: auto;
+}
+
+.weather-details {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+.weather-card .city-name {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.weather-card .date {
+  font-size: 0.9rem;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #212529;
+  padding: 70px 0;
+  color: #fff;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+/* Subscribe Section */
+.subscribe input[type="email"] {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px 0 0 20px; 
+  margin-right: -5px; 
+}
+
+.subscribe button {
+  padding: 10px 15px;
+  background-color: #0093ff;
+  color: #fff;
+  border: none;
+  border-radius: 0 20px 20px 0; 
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 120px; 
+}
+
+.subscribe button:hover {
+  background-color: #007bff;
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Social Media Icons */
+.social {
+  display: flex;
+}
+
+.social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #0e0e0e;
+  color: #0093ff;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social a:hover {
+  background-color: #0093ff;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 147, 255, 0.3);
+}
+
+.social i {
+  font-size: 18px;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #888;
+}
+
+/* Media Queries (Responsive Design) */
+@media (max-width: 992px) {
+  .hero {
+    min-height: 40vh;
+  }
+  .margin {
+    margin-top: 30px;
+  }
+  .nav-item {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-template-rows: 1fr 1fr;
+  }
+  .weather-card .temp {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 576px) { 
+  .hero .input-group {
+    width: 90%;
+  }
+  .weather-card .temp {
+    font-size: 2.5rem;
+  }
+  .nav-item {
+    margin-left: 10px;
+  }
+  .nav-link {
+    font-size: 14px;
+  }
+  footer {
+    padding: 40px 0;
+  }
+
+ 
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input[type="email"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .subscribe button {
+    width: 100%;
+  }
+
+  .social {
+    margin-top: 20px;
+  }
+}
