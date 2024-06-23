@@ -1,5 +1,5 @@
 var apiKey = 'dc2ce1e1cfdc42ada7492050242206'; 
-var apiUrl = 'http://api.weatherapi.com/v1/forecast.json?key='; 
+var apiUrl = 'https://api.weatherapi.com/v1/forecast.json?key='; 
 
 async function getWeather() {
   var city = document.getElementById('cityInput').value || 'Cairo';
